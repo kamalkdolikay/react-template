@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Portfolio from './components/portifolio.component';
+
+const Portfolio = lazy(() => import('./components/portifolio.component'));
 
 const PortfolioRoutes: React.FC = () => (
-  <Routes>
-    <Route path="/" element={<Portfolio />}></Route>
-    <Route path="*" element={<Navigate to="/404" replace />}></Route>
-  </Routes>
+  <Suspense fallback={<div>Loading...</div>}>
+    <Routes>
+      <Route path="/" element={<Portfolio />}></Route>
+      <Route path="*" element={<Navigate to="/404" replace />}></Route>
+    </Routes>
+  </Suspense>
 );
 
 export default PortfolioRoutes;
