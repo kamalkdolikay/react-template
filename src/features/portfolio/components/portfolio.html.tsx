@@ -1,4 +1,4 @@
-import './portfolio.css';
+import styles from './portfolio.module.css';
 
 const PortfolioHtml = () => {
   const greetingMessage = 'Portfolio!';

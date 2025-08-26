@@ -1,4 +1,4 @@
-import './not-found.css';
+import styles from './not-found.module.css';
 
 const NotFoundHtml = () => {
   return (

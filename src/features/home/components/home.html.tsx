@@ -1,8 +1,12 @@
-import './home.css';
+import styles from './home.module.css';
 
-const HomeHtml = () => {
-  const greetingMessage = 'Hello, World!';
-  return <h1 className="hello-world">{greetingMessage}</h1>;
+const HomeHtml: React.FC = () => {
+  const greetingMessage: string = 'Hello, World!';
+  return (
+    <h1 className={styles.helloWorld} aria-label={greetingMessage}>
+      {greetingMessage}
+    </h1>
+  );
 };
 
 export default HomeHtml;
