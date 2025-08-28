@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../../../store/store';
+import { useAppDispatch, useAppSelector } from '@/store/redux.store';
 import PortfolioHtml from './portfolio.html';
 import { setGreetingMessage } from '../state/portfolio.slice';
 
