@@ -1,5 +1,3 @@
-import styles from './not-found.module.css';
-
 const NotFoundHtml = () => {
   return (
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
