@@ -1,8 +1,15 @@
-import styles from './portfolio.module.css';
+import styles from '../styles/portfolio.module.css';
 
-const PortfolioHtml = () => {
-  const greetingMessage = 'Portfolio!';
-  return <h1>{greetingMessage}</h1>;
+interface PortfolioHtmlProps {
+  message: string;
+}
+
+const PortfolioHtml: React.FC<PortfolioHtmlProps> = ({ message }) => {
+  return (
+    <h1 className={styles.portfolioTitle} aria-label={message}>
+      {message}
+    </h1>
+  );
 };
 
 export default PortfolioHtml;
