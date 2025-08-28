@@ -28,8 +28,8 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/kamalkdolikay/desktop-kd.git
-   cd desktop-kd
+   git clone https://github.com/kamalkdolikay/react-template.git
+   cd react-template
    ```
 
 2. **Switch to the Scaffold Branch**:
