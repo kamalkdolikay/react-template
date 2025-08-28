@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useSelector, useDispatch } from 'react-redux';
 import type { TypedUseSelectorHook } from 'react-redux';
-import homeReducer from '../features/home/state/home.slice';
-import portfolioReducer from '../features/portfolio/state/portfolio.slice';
+import homeReducer from '@/features/home/state/home.slice';
+import portfolioReducer from '@/features/portfolio/state/portfolio.slice';
 
 // Configure the Redux store
 const store = configureStore({
