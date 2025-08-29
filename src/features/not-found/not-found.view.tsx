@@ -1,4 +1,4 @@
-const NotFoundHtml = () => {
+const NotFoundView = () => {
   return (
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
       <h1>404 - Page Not Found</h1>
@@ -7,4 +7,4 @@ const NotFoundHtml = () => {
   );
 };
 
-export default NotFoundHtml;
+export default NotFoundView;

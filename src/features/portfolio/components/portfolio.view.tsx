@@ -1,10 +1,10 @@
 import styles from '../styles/portfolio.module.css';
 
-interface PortfolioHtmlProps {
+interface PortfolioViewProps {
   message: string;
 }
 
-const PortfolioHtml: React.FC<PortfolioHtmlProps> = ({ message }) => {
+const PortfolioView: React.FC<PortfolioViewProps> = ({ message }) => {
   return (
     <h1 className={styles.portfolioTitle} aria-label={message}>
       {message}
@@ -12,4 +12,4 @@ const PortfolioHtml: React.FC<PortfolioHtmlProps> = ({ message }) => {
   );
 };
 
-export default PortfolioHtml;
+export default PortfolioView;

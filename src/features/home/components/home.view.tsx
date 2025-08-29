@@ -1,9 +1,10 @@
 import styles from '../styles/home.module.css';
-interface HomeHtmlProps {
+
+interface HomeViewProps {
   greetingMessage: string;
 }
 
-const HomeHtml: React.FC<HomeHtmlProps> = ({ greetingMessage }) => {
+const HomeView: React.FC<HomeViewProps> = ({ greetingMessage }) => {
   return (
     <h1 className={styles.helloWorld} aria-label={greetingMessage}>
       {greetingMessage}
@@ -11,4 +12,4 @@ const HomeHtml: React.FC<HomeHtmlProps> = ({ greetingMessage }) => {
   );
 };
 
-export default HomeHtml;
+export default HomeView;
