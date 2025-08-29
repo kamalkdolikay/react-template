@@ -1,9 +1,9 @@
-import HomeHtml from './home.html';
+import HomeView from './home.view';
 import { useAppSelector } from '@/store/redux.store';
 
 const Home = () => {
   const greetingMessage = useAppSelector((state) => state.home.greetingMessage);
-  return <HomeHtml greetingMessage={greetingMessage} />;
+  return <HomeView greetingMessage={greetingMessage} />;
 };
 
 export default Home;

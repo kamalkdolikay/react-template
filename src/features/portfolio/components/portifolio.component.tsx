@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/redux.store';
-import PortfolioHtml from './portfolio.html';
+import PortfolioView from './portfolio.view';
 import { setGreetingMessage } from '../state/portfolio.slice';
 
 const Portfolio: React.FC = () => {
@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
     dispatch(setGreetingMessage('Welcome to My Portfolio!'));
   }, [dispatch]);
 
-  return <PortfolioHtml message={greetingMessage} />;
+  return <PortfolioView message={greetingMessage} />;
 };
 
 export default Portfolio;

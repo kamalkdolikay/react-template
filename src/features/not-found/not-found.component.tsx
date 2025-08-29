@@ -1,7 +1,7 @@
-import NotFoundHtml from './not-found.html';
+import NotFoundView from './not-found.view';
 
 const NotFound = () => {
-  return <NotFoundHtml />;
+  return <NotFoundView />;
 };
 
 export default NotFound;
