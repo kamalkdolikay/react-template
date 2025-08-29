@@ -64,10 +64,6 @@ Ensure you have the following installed:
    ```bash
    npm run dev
    ```
-   Or with pnpm:
-   ```bash
-   pnpm dev
-   ```
    Open `http://localhost:5173` in your browser to view the app.
 
 6. **Build for Production**:
@@ -91,7 +87,7 @@ Ensure you have the following installed:
 │   │   ├── home/
 │   │   │   ├── components/            # Feature-specific components
 │   │   │   │   ├── home.component.tsx # Feature-specific render components
-│   │   │   │   ├── home.html.tsx      # Feature-specific HTML
+│   │   │   │   ├── home.view.tsx      # Feature-specific HTML
 │   │   │   ├── services/              # Feature-specific services/logic
 │   │   │   │   ├── home.service.tsx   # Service logic
 │   │   │   ├── state/                 # Feature-specific state management
@@ -103,7 +99,7 @@ Ensure you have the following installed:
 │   │   ├── portfolio/
 │   │   │   ├── components/            # Feature-specific components
 │   │   │   │   ├── portfolio.component.tsx # Feature-specific render components
-│   │   │   │   ├── portfolio.html.tsx # Feature-specific HTML
+│   │   │   │   ├── portfolio.view.tsx # Feature-specific HTML
 │   │   │   ├── state/                 # Feature-specific state management
 │   │   │   │   ├── portfolio.slice.ts # Redux slice for portfolio
 │   │   │   ├── styles/                # Feature-specific styles
@@ -134,6 +130,7 @@ Ensure you have the following installed:
 ├── .prettierrc                        # Prettier configuration
 ├── .eslint.config.js                  # ESLint configuration
 ├── index.html                         # HTML entry point
+├── netlify.toml                       # Netlify rules for routing
 ├── package-lock.json                  # Lock file for dependencies
 ├── package.json                       # Project dependencies and scripts
 ├── README.md                          # Project documentation
